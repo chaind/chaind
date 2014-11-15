@@ -30,7 +30,7 @@ chaind requires the installation of several third-party packages. Before
 compiling make sure you have installed all prerequisites:
 
 ```
-$ apt-get install autotools-dev pkg-config libgmp-dev libjudy-dev mongodb-server libmemcached-dev libtomcrypt-dev
+$ apt-get install autotools-dev pkg-config libgmp-dev libjudy-dev mongodb-server libmemcached-dev libtomcrypt-dev libdbus-1-dev libconfig-dev
 ```
 
 You will also need to install the mongo-c driver
@@ -40,7 +40,7 @@ libsecp256k1 (https://github.com/bitcoin/secp256k1).
 Then run:
 
 ```
-$ ./configure && make && make install
+$ ./autogen.sh && ./configure && make && make install
 ```
 
 After installation completes, edit example.conf to your liking. Save to
@@ -74,7 +74,7 @@ Whether you use --system or --session depends on your configuration.
 Developers
 ==========
 
-Add "CFLAGS=-g -O2 -DLOG_STDOUT" to your ./configure environment.
+Add "CFLAGS=-g -O0 -DLOG_STDOUT" to your ./configure environment.
 
 TODO
 ====

@@ -30,7 +30,7 @@ chaind requires the installation of several third-party packages. Before
 compiling make sure you have installed all prerequisites:
 
 ```
-$ apt-get install autotools-dev pkg-config libgmp-dev libjudy-dev mongodb-server libmemcached-dev libtomcrypt-dev libdbus-1-dev libconfig-dev
+$ apt-get install autotools-dev autoconf automake libtool pkg-config libgmp-dev libjudy-dev mongodb-server libmemcached-dev libtomcrypt-dev libdbus-1-dev libconfig-dev
 ```
 
 You will also need to install the mongo-c driver

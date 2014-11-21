@@ -27,7 +27,7 @@ AC_CHECK_HEADERS([gmp.h], [], [have_libgmp=no])
 AC_SEARCH_LIBS([pthread_create], [pthread], [], [have_libpthread=no])
 AC_CHECK_HEADERS([pthread.h], [], [have_libpthread=no])
 
-AC_SEARCH_LIBS([secp256k1_ecdsa_pubkey_verify], [secp256k1], [], [have_libsecp256k1=no])
+AC_SEARCH_LIBS([secp256k1_ec_pubkey_verify], [secp256k1], [], [have_libsecp256k1=no])
 AC_CHECK_HEADERS([secp256k1.h], [], [have_libsecp256k1=no])
 
 AC_SEARCH_LIBS([sha256_init], [tomcrypt], [], [have_libtomcrypt=no])

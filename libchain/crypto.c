@@ -21,7 +21,7 @@ void crypto_deinit()
 
 int crypto_is_valid_public_key(unsigned char const* public_key, size_t public_key_size)
 {
-    return secp256k1_ecdsa_pubkey_verify(public_key, public_key_size);
+    return secp256k1_ec_pubkey_verify(public_key, public_key_size);
 }
 
 int crypto_verify_signature(unsigned char* signature, size_t signature_size, 
